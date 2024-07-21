@@ -4,6 +4,7 @@ ArcticEdge is an open-source CPU design implemented in SystemVerilog, targeting 
 
 ## Project Structure
 
+```
 ArcticEdge/
 ├── src/
 │   ├── rtl/          # SystemVerilog RTL files
@@ -12,8 +13,9 @@ ArcticEdge/
 ├── sim/              # Simulation files
 ├── docs/             # Documentation
 ├── scripts/          # TCL and other scripts
-├── README.md         # This file
+├── README.md         # Project overview and instructions
 └── LICENSE           # License file
+```
 
 ## Prerequisites
 
