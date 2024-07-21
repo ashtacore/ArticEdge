@@ -1,6 +1,8 @@
 # ArcticEdge CPU
 
-ArcticEdge is an open-source CPU design implemented in SystemVerilog, targeting the Nexys A7-100T FPGA board.
+ArcticEdge is an open-source CPU based on the RISC-V ISA, implemented in SystemVerilog, targeting the Nexys A7-100T FPGA board.
+
+This is a WIP, there isn't really anything you can do with this design yet.
 
 ## Project Structure
 

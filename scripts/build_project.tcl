@@ -1,5 +1,5 @@
 # Create project
-create_project cpu_project ./vivado_project -part xc7a100tcsg324-1
+create_project arctic_edge_core ./vivado_project -part xc7a100tcsg324-1
 
 # Set project properties
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
