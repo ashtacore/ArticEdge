@@ -7,8 +7,8 @@ set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project
 # Set target language to SystemVerilog
 set_property target_language SystemVerilog [current_project]
 
-# Add source files
-add_files -fileset sources_1 [glob ./src/rtl/*.sv]
+# Add source files recursively
+add_files -fileset sources_1 [glob -nocomplain -directory ./src/rtl -type f -recursive *.sv]
 
 # Add testbench files
 add_files -fileset sim_1 [glob ./src/tb/*.sv]

@@ -9,14 +9,19 @@ This is a WIP, there isn't really anything you can do with this design yet.
 ```
 ArcticEdge/
 ├── src/
-│   ├── rtl/          # SystemVerilog RTL files
-│   ├── tb/           # Testbench files
-│   └── constraints/  # Constraint files
-├── sim/              # Simulation files
-├── docs/             # Documentation
-├── scripts/          # TCL and other scripts
-├── README.md         # Project overview and instructions
-└── LICENSE           # License file
+│   ├── rtl/              # SystemVerilog RTL files
+|   |   |── alu/          # SV for ALU stage (EX)
+|   |   |── decode/       # SV for Instruction Decode (ID) / Register Read
+|   |   |── fetch/        # SV for Instruction Fetch (IF)
+|   |   |── mem/          # SV for Memory Access (MEM)
+|   |   |── write_back/   # SV for Register Write Back (WB)
+│   ├── tb/               # Testbench files
+│   └── constraints/      # Constraint files
+├── sim/                  # Simulation files
+├── docs/                 # Documentation
+├── scripts/              # TCL and other scripts
+├── README.md             # Project overview and instructions
+└── LICENSE               # License file
 ```
 
 ## Prerequisites
