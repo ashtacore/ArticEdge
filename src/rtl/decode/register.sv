@@ -4,10 +4,10 @@ module register #(
     parameter REG_WIDTH,
     parameter GROUNDED = 0
 ) (
-    input logic clk,
-    input logic rst_n, 
-    input logic enable,
-    input logic [REG_WIDTH-1:0] data_in,
+    input  logic clk,
+    input  logic rst_n, 
+    input  logic enable,
+    input  logic [REG_WIDTH-1:0] data_in,
     output logic [REG_WIDTH-1:0] data_out
 );
     generate

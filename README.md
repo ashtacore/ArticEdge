@@ -63,10 +63,6 @@ If you prefer to set up the project manually or if you're using a different deve
 3. If using the Nexys A7-100T, add the constraint file from `src/constraints/`
 4. Set the top-level module to `cpu_core` (or your actual top-level module name)
 
-## Contributing
-
-Contributions to ArcticEdge are welcome! Please feel free to submit pull requests, create issues, or suggest improvements.
-
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.

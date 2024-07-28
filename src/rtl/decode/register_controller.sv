@@ -1,16 +1,18 @@
+`timescale 1ns / 1ps
+
 module register_controller #(
     parameter REG_WIDTH = 32,
     parameter NUM_REGS = 32,
     parameter ADDR_WIDTH = $clog2(NUM_REGS),
     parameter REG_ZERO_GROUND = 0
 ) (
-    input logic clk,
-    input logic rst_n,
-    input logic write_enable,
-    input logic [ADDR_WIDTH-1:0] write_addr,
-    input logic [REG_WIDTH-1:0] write_data,
-    input logic [ADDR_WIDTH-1:0] read_addr_0,
-    input logic [ADDR_WIDTH-1:0] read_addr_1,
+    input  logic clk,
+    input  logic rst_n,
+    input  logic write_enable,
+    input  logic [ADDR_WIDTH-1:0] write_addr,
+    input  logic [REG_WIDTH-1:0] write_data,
+    input  logic [ADDR_WIDTH-1:0] read_addr_0,
+    input  logic [ADDR_WIDTH-1:0] read_addr_1,
     output logic [REG_WIDTH-1:0] read_data_0,
     output logic [REG_WIDTH-1:0] read_data_1
 );
