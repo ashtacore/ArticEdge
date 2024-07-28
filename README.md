@@ -45,6 +45,8 @@ cd ArcticEdge
 4. Navigate to the project directory in the TCL console:
 
 5. Update the `scripts/build_project.tcl` file for your FPGA. It is currently configured for the Nexys A7-100T.
+  - You may also need to update the memory related RTL files to match your system's layout. This includes:
+    - `instruction_mem_bram.sv` - My implementation of a seperate instruction memory on a 4,860 Kbit block RAM
 
 6. Run the project creation script:
 
